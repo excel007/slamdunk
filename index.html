@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="X-Frame-Options" content="DENY"/>
+<meta http-equiv="X-XSS-Protection" content="1; mode=block"/>
+<title>SHOHOKU | THE ATHLETIC EDITORIAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&amp;family=Inter:wght@400;700&amp;family=Lexend:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e2e1",
+              "on-secondary-container": "#b7b5b4",
+              "on-primary": "#68000c",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed-dim": "#c8c6c5",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-fixed-variant": "#474746",
+              "primary-fixed-dim": "#ffb3ae",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "outline": "#ad8885",
+              "primary-container": "#ce1126",
+              "tertiary-fixed": "#e2e2e2",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary-fixed": "#1a1c1c",
+              "primary-fixed": "#ffdad7",
+              "tertiary": "#c6c6c7",
+              "inverse-primary": "#c0001f",
+              "on-primary-container": "#ffe0dd",
+              "on-tertiary": "#2f3131",
+              "background": "#131313",
+              "secondary-container": "#474746",
+              "surface": "#131313",
+              "outline-variant": "#5c3f3d",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container": "#201f1f",
+              "on-primary-fixed-variant": "#930015",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#e7e7e7",
+              "error": "#ffb4ab",
+              "tertiary-container": "#666868",
+              "inverse-on-surface": "#313030",
+              "on-tertiary-fixed-variant": "#454747",
+              "secondary": "#c8c6c5",
+              "on-primary-fixed": "#410004",
+              "surface-variant": "#353534",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#e5e2e1",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-surface-variant": "#e6bdba",
+              "surface-tint": "#ffb3ae",
+              "on-background": "#e5e2e1",
+              "on-secondary": "#313030",
+              "surface-bright": "#3a3939",
+              "primary": "#ffb3ae"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .halftone-overlay {
+            background-image: radial-gradient(#5c3f3d 1px, transparent 0);
+            background-size: 8px 8px;
+            mask-image: linear-gradient(to right, transparent, black);
+        }
+        .kinetic-skew {
+            transform: skewX(-5deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-screen-2xl mx-auto bg-[#131313]/80 backdrop-blur-xl">
+<div class="text-3xl font-black italic tracking-tighter text-[#ce1126] font-headline">SHOHOKU</div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#ce1126] border-b-4 border-[#ce1126] pb-1 font-headline font-bold tracking-tighter uppercase" href="#">MANGA</a>
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="#characters">CHARACTERS</a>
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="#">STORE</a>
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="#">ABOUT</a>
+</div>
+<button class="bg-[#ce1126] text-white px-8 py-2 font-headline font-bold tracking-tighter uppercase active:scale-95 transition-transform duration-100 hover:bg-[#ffb3ae] hover:text-white">
+            SHOP NOW
+        </button>
+</nav>
+<main>
+<!-- Hero Section: The Fast Break -->
+<section class="relative min-h-screen flex flex-col justify-end overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale brightness-50 contrast-125 scale-110 origin-bottom-left" data-alt="Intense dramatic manga-style illustration of a red-haired basketball player jumping for a powerful slam dunk with ink splash effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8SitP08u8vad6E4x7G9xZRi6lcTLPI5utpnvv6EI9hO08InL5ZY6HRL5c9VO0gdHvy0f8y2q26Or4j4JehDNeJ-yrb1XlKYrulqjNpF-Yqtc0wxfJ4mIdWI-wDoIvRC12jqDitfPe36paVsNDIezwBZQH4rog1XJ_WYJq8_E5rY7mm_GWDWpC_ITzOQ5FcqF8Tt3zO8gYbYDTKoZLmtZjTMbSmL71xfZfD28I5EuNWHgKW_MI7EOLU8k10opkF61uSCkldF-fCz_k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 halftone-overlay opacity-30"></div>
+</div>
+<div class="relative z-10 px-10 pb-20 max-w-7xl">
+<div class="mb-4 inline-block bg-primary-container px-4 py-1 font-label text-sm uppercase tracking-widest text-on-primary-container">
+                    JUMP COMICS SPECIAL
+                </div>
+<h1 class="text-[8vw] md:text-[12vw] leading-[0.85] font-headline font-black italic tracking-tighter uppercase text-on-surface mb-8">
+                    REBOUND<br/>
+<span class="text-primary-container">KING.</span>
+</h1>
+<div class="flex flex-col md:flex-row gap-8 items-start max-w-2xl">
+<p class="text-lg md:text-xl font-body text-secondary leading-relaxed border-l-4 border-primary-container pl-6">
+                        Experience the raw energy of Takehiko Inoue's masterpiece. The court isn't just a place to play—it's where legends are carved in sweat and ink.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">local_fire_department</span>
+<span class="font-label text-xs uppercase tracking-[0.2em]">31 Volumes Collected</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">star</span>
+<span class="font-label text-xs uppercase tracking-[0.2em]">170M+ Copies Sold</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Kinetic Speed Lines Decor -->
+<div class="absolute right-0 bottom-40 w-1/2 h-[2px] bg-primary-container z-20"></div>
+<div class="absolute right-0 bottom-48 w-1/3 h-[2px] bg-primary-container z-20"></div>
+<div class="absolute right-0 bottom-32 w-2/3 h-[2px] bg-primary-container z-20 opacity-50"></div>
+</section>
+<!-- Characters: The Shohoku Five -->
+<section id="characters" class="py-32 px-10 bg-surface-container-low overflow-hidden">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<span class="font-label text-primary-container uppercase tracking-widest block mb-4">The Roster</span>
+<h2 class="text-6xl md:text-8xl font-headline font-black italic uppercase tracking-tighter leading-none">THE STARTING<br/>LINEUP</h2>
+</div>
+<p class="max-w-xs font-body text-secondary-fixed-dim text-right">
+                    Five individuals, one shared vision. From the "Gifted Red-Head" to the "Gori," witness the chemistry that shook the Kanagawa prefecture.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-0 border-y border-outline-variant/20">
+<!-- Sakuragi -->
+<a class="group relative aspect-[3/4] overflow-hidden bg-surface border-r border-outline-variant/10" href="sakuragi.html">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Portrait of a fierce basketball player with short bright red hair and intense gaze, sports editorial style lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_OZOGY3Lur5Q49CnEFMGUmq_ZyI26q5nsW3HVWsi09zRLeETVRAS7hGOAu786XG_9YTLz4VZWF6h_NsaB_y7urqVT3kyXg6BVjEtMDDEQWyN5YY1NuBKHLXIPW7q3r3IWxPOuaCXyj5HBWTFK8T33_I4nm6IMQuABAqSotBIgreFhaMGjhrinq4v6cFPdT6yyHUPno1GOSSuhr4wKi9fi1_DG-ExVg3vZjmQzoY8mYpgEyGzmhfr9BNC_6HJeE-k4nN10L3vWFI5V"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="font-label text-primary text-xs uppercase tracking-widest">Power Forward</span>
+<h3 class="text-3xl font-headline font-black text-white italic uppercase">Sakuragi</h3>
+</div>
+<div class="absolute top-6 right-6 font-headline font-black text-5xl text-white/10 group-hover:text-primary-container transition-colors italic">10</div>
+</a>
+<!-- Rukawa -->
+<a class="group relative aspect-[3/4] overflow-hidden bg-surface border-r border-outline-variant/10" href="rukawa.html">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Close up of a cool, stoic athlete with black hair falling over his eyes, dark moody shadows, sports photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgUb7Zc-YVgBbyqS6vOfP747tZXr67noOWBSD5y8jCi0cwGjHQtgYa6ZrYozN1vJoVSYEFvDkiJHzBqAEUdDvXhrX2WBLOXUIt9bDt0pI32gE5q_Caqo7m7puANWFRavQ83iHCCFaIjFY-dcUbf_DqRm4rGhUhJIKTZmibtcxELQ29pQzzk9xjmJK2WWcqMjm0w6EC9ZRLSBPVFhRC5J7J20ohWz70HUhhACtn6avaB2Jv5USA6CbLyZirkWvBzrc0kjdd5BJ_I71b"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="font-label text-primary text-xs uppercase tracking-widest">Small Forward</span>
+<h3 class="text-3xl font-headline font-black text-white italic uppercase">Rukawa</h3>
+</div>
+<div class="absolute top-6 right-6 font-headline font-black text-5xl text-white/10 group-hover:text-primary-container transition-colors italic">11</div>
+</a>
+<!-- Akagi -->
+<a class="group relative aspect-[3/4] overflow-hidden bg-surface border-r border-outline-variant/10" href="akagi.html">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Strong large-framed athlete looking determined, heavy sweat, low angle powerful composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt_9Rcf2SyvIA3LkKGrbjxzqrNPUxBPm9n362xQPvSMUpQlJz28Lr1JUob3GWALdKauvA5ANDuwoQ6zvAqhsqRn18Dd2mcwMhS6tkuCWQrqmy6rhahNOAwLRx-0nAil6uXUiQziMf0Nzm-MgEQAWfzBSGbgFQyLhSlVXhDzYlCeF4IPbd7WyIONwoErckFFjr0lk4G_FFfywPo0CwMiRGMRxG1OSGo5D1oz4wEZUEfI8PJ905cpoBIDU0X_DJphmPmo9asfZ0htM-D"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="font-label text-primary text-xs uppercase tracking-widest">Center</span>
+<h3 class="text-3xl font-headline font-black text-white italic uppercase">Akagi</h3>
+</div>
+<div class="absolute top-6 right-6 font-headline font-black text-5xl text-white/10 group-hover:text-primary-container transition-colors italic">04</div>
+</a>
+<!-- Miyagi -->
+<a class="group relative aspect-[3/4] overflow-hidden bg-surface border-r border-outline-variant/10" href="miyagi.html">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Quick-looking short athlete with curly hair and earrings, confident smirk, vibrant stadium lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwYGy9kc-ZOhXR8ZW-o2JfNPb643Vi-saQoCgQQUYAiDdwirX4C2JaCRjFk9lnjAoKLsi4EpSVv6bO3h97tlxhQsjBc-CoG8R6Ix5U3xsdWGO7giY-4BW3TZT4yJi-CUvvqLz26ZIy-72O69czoVscjz1j1nFF4V4euuA7cf0W6PpGYd92WNA5xUkJcegMqFnDfinAbn4g0qBrFlravH3T7Q6FcKkPq_PM1ZEqL8HXzHGFDwaDZZJVs1Prm_05ukLl9qxXSRtz9CJA"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="font-label text-primary text-xs uppercase tracking-widest">Point Guard</span>
+<h3 class="text-3xl font-headline font-black text-white italic uppercase">Miyagi</h3>
+</div>
+<div class="absolute top-6 right-6 font-headline font-black text-5xl text-white/10 group-hover:text-primary-container transition-colors italic">07</div>
+</a>
+<!-- Mitsui -->
+<a class="group relative aspect-[3/4] overflow-hidden bg-surface" href="mitsui.html">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0" data-alt="Player exhausted but focused on a basketball hoop, dramatic backlighting, cinematic sport shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5TXgg6we0uL8309zfZb2608EpBTIEq54uxlMz4TTaejbn09iE0xHP1D_ko-cmaMJJrs0OXqj74AQdrYIHlULs5YJC6rHu8ZzHi4d0IRjT6vke0CFYn7XGHiIMXECt9fh9Al6y2SRxwiwRUE-g-P5-VMNgyDj4j5vcTTvJrbCuOP5_jFTIbXln3oLPv7NzXA-BrKSVTXQWcITk2ptTAxsNjrQng_w8fc0pMhpWnvMd-jGa5XQWIJ9eaXFdWgKsMnOCH0AsJzx1sODG"/>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="font-label text-primary text-xs uppercase tracking-widest">Shooting Guard</span>
+<h3 class="text-3xl font-headline font-black text-white italic uppercase">Mitsui</h3>
+</div>
+<div class="absolute top-6 right-6 font-headline font-black text-5xl text-white/10 group-hover:text-primary-container transition-colors italic">14</div>
+</a>
+</div>
+</section>
+<!-- Archive Section: The Manga Library (Asymmetrical Grid) -->
+<section class="py-32 px-10 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20">
+<h2 class="text-5xl font-headline font-black uppercase tracking-tighter italic inline-block relative">
+                        THE ARCHIVE
+                        <div class="absolute -right-12 top-0 text-primary-container text-sm font-label rotate-90">VOL 01-31</div>
+</h2>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<!-- Featured Volume -->
+<div class="col-span-12 md:col-span-7 bg-surface-container-high relative p-12 overflow-hidden group">
+<div class="absolute top-0 right-0 halftone-overlay w-64 h-64 opacity-20"></div>
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="w-64 aspect-[2/3] bg-surface-container-highest shadow-2xl flex-shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Manga cover design with stylized hand-drawn basketball player in motion, high contrast black and white with red accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGCnXYyPaN2KqXbzpY2rLtfC0_53ENVwSTLvj4VkCMXfXaRWlPndQlH59tgn6IyAnSjjdhxcWntwbWO93g4Ak1PhfwuBZln4X02o3tlFmXLl8jfpJwWbac37foW2Q51MBjo8WoAxFnFt5GNw_JMDyJT1ur6RjeK4gXcGJautROUCBASHA5fs5KRLdVkJEqEYY9puLXIW3DdQCq3_-L6fEoK4w1b4tR_vGawG6jGIJpGhePBlE8I3D8sQdDN6T2prRN2C09Np7Sr7KV"/>
+<div class="absolute inset-0 border-8 border-primary-container/30"></div>
+</div>
+<div>
+<div class="bg-primary-container/10 text-primary px-3 py-1 text-xs font-label uppercase inline-block mb-4">Volume 01: Sakuragi-kun</div>
+<h3 class="text-4xl font-headline font-black mb-6 italic uppercase">THE START OF<br/>A LEGEND</h3>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">
+                                    A high school delinquent joins the basketball team to impress his crush, only to discover a burning passion for the game.
+                                </p>
+<button class="group flex items-center gap-4 text-primary font-label text-sm uppercase tracking-widest">
+                                    READ CHAPTER 01
+                                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Side Grid -->
+<div class="col-span-12 md:col-span-5 grid grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container hover:bg-primary-container transition-colors duration-150 cursor-pointer group">
+<h4 class="font-headline font-black text-2xl italic uppercase group-hover:text-white">VOL 10</h4>
+<p class="text-xs font-label text-secondary-fixed-dim mt-2 group-hover:text-white/80">REBOUNDER TRAINING</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container hover:bg-primary-container transition-colors duration-150 cursor-pointer group">
+<h4 class="font-headline font-black text-2xl italic uppercase group-hover:text-white">VOL 20</h4>
+<p class="text-xs font-label text-secondary-fixed-dim mt-2 group-hover:text-white/80">THE NATIONALS STAGE</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container hover:bg-primary-container transition-colors duration-150 cursor-pointer group">
+<h4 class="font-headline font-black text-2xl italic uppercase group-hover:text-white">VOL 25</h4>
+<p class="text-xs font-label text-secondary-fixed-dim mt-2 group-hover:text-white/80">SANNOH'S THREAT</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-2 border-primary-container hover:bg-primary-container transition-colors duration-150 cursor-pointer group">
+<h4 class="font-headline font-black text-2xl italic uppercase group-hover:text-white">VOL 31</h4>
+<p class="text-xs font-label text-secondary-fixed-dim mt-2 group-hover:text-white/80">THE FINAL BUZZER</p>
+</div>
+<div class="col-span-2 bg-surface-container-highest p-8 flex justify-between items-center group cursor-pointer overflow-hidden relative">
+<span class="font-headline font-black italic text-xl uppercase z-10">EXPLORE FULL COLLECTION</span>
+<span class="material-symbols-outlined text-primary-container z-10 text-3xl">auto_stories</span>
+<div class="absolute right-0 bottom-0 halftone-overlay w-24 h-24 opacity-10"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA: Join the Fan Club -->
+<section class="py-32 bg-primary-container text-white overflow-hidden relative">
+<div class="absolute left-0 top-0 h-full w-full halftone-overlay opacity-20 pointer-events-none"></div>
+<!-- Floating Decorative Text -->
+<div class="absolute -top-10 -right-20 text-[20vw] font-headline font-black italic opacity-10 whitespace-nowrap pointer-events-none">SHOHOKU</div>
+<div class="max-w-4xl mx-auto px-10 text-center relative z-10">
+<span class="font-label text-sm uppercase tracking-[0.4em] block mb-8">COURTSIDE ACCESS</span>
+<h2 class="text-5xl md:text-8xl font-headline font-black italic uppercase leading-none mb-10 tracking-tighter">
+                    NEVER MISS THE<br/>CLUTCH SHOT.
+                </h2>
+<p class="text-xl font-body mb-12 opacity-90 max-w-2xl mx-auto">
+                    Join the Shohoku Fan Club for exclusive manga art, official merchandise drops, and high-definition mobile wallpapers.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<input class="bg-white/10 border-b-2 border-white/30 focus:border-white focus:ring-0 text-white font-label py-4 px-6 md:w-96 placeholder:text-white/50" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="bg-white text-primary-container font-headline font-black italic px-10 py-4 uppercase tracking-tighter text-xl active:scale-95 transition-transform">
+                        JOIN THE TEAM
+                    </button>
+</div>
+<p class="mt-8 font-label text-[10px] opacity-60 uppercase tracking-widest italic">By joining, you agree to receive digital scouts reports and updates.</p>
+</div>
+</section>
+<!-- Stats Bar: Editorial Layout -->
+<section class="bg-surface-container-lowest py-20 px-10 border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto flex flex-wrap justify-between gap-12">
+<div class="flex flex-col">
+<span class="font-headline font-black italic text-5xl text-primary-container">1990</span>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mt-2">DEBUT YEAR</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-black italic text-5xl text-primary-container">276</span>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mt-2">CHAPTERS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-black italic text-5xl text-primary-container">12M+</span>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mt-2">ANNUAL READERS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-black italic text-5xl text-primary-container">#1</span>
+<span class="font-label text-xs uppercase tracking-widest text-secondary mt-2">SPORTS MANGA ALL-TIME</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-10 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#0e0e0e] border-t border-[#ce1126]/20">
+<div class="text-xl font-black text-[#ce1126] font-headline italic">SHOHOKU</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="#">PRIVACY POLICY</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="#">TERMS OF USE</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="#">SUPPORT</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="#">PRESS</a>
+</div>
+<div class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 text-center md:text-right">
+            © TAKEHIKO INOUE / I.T.PLANNING, INC. ALL RIGHTS RESERVED. <span class="block mt-1 text-[10px] opacity-50 uppercase tracking-wider">UNOFFICIAL FAN SITE</span>
+        </div>
+</footer>
+<script>
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const text = this.textContent.trim();
+            if (text && !text.startsWith('READ')) {
+                alert(text + ' - Coming Soon');
+            }
+        });
+    });
+</script>
+</body></html>
