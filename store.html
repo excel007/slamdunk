@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="X-Frame-Options" content="DENY"/>
+<meta http-equiv="X-XSS-Protection" content="1; mode=block"/>
+<title>STORE | SHOHOKU</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700;900&amp;family=Inter:wght@400;700&amp;family=Lexend:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e2e1",
+              "on-secondary-container": "#b7b5b4",
+              "on-primary": "#68000c",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed-dim": "#c8c6c5",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-fixed-variant": "#474746",
+              "primary-fixed-dim": "#ffb3ae",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "outline": "#ad8885",
+              "primary-container": "#ce1126",
+              "tertiary-fixed": "#e2e2e2",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary-fixed": "#1a1c1c",
+              "primary-fixed": "#ffdad7",
+              "tertiary": "#c6c6c7",
+              "inverse-primary": "#c0001f",
+              "on-primary-container": "#ffe0dd",
+              "on-tertiary": "#2f3131",
+              "background": "#131313",
+              "secondary-container": "#474746",
+              "surface": "#131313",
+              "outline-variant": "#5c3f3d",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container": "#201f1f",
+              "on-primary-fixed-variant": "#930015",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "on-tertiary-container": "#e7e7e7",
+              "error": "#ffb4ab",
+              "tertiary-container": "#666868",
+              "inverse-on-surface": "#313030",
+              "on-tertiary-fixed-variant": "#454747",
+              "secondary": "#c8c6c5",
+              "on-primary-fixed": "#410004",
+              "surface-variant": "#353534",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#e5e2e1",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-surface-variant": "#e6bdba",
+              "surface-tint": "#ffb3ae",
+              "on-background": "#e5e2e1",
+              "on-secondary": "#313030",
+              "surface-bright": "#3a3939",
+              "primary": "#ffb3ae"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Lexend"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .halftone-overlay {
+            background-image: radial-gradient(#5c3f3d 1px, transparent 0);
+            background-size: 8px 8px;
+            mask-image: linear-gradient(to right, transparent, black);
+        }
+        .kinetic-skew {
+            transform: skewX(-5deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 flex justify-between items-center px-10 py-6 max-w-screen-2xl mx-auto bg-[#131313]/80 backdrop-blur-xl">
+<a class="text-3xl font-black italic tracking-tighter text-[#ce1126] font-headline" href="index.html">SHOHOKU</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="index.html">MANGA</a>
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="index.html#characters">CHARACTERS</a>
+<a class="text-[#ce1126] border-b-4 border-[#ce1126] pb-1 font-headline font-bold tracking-tighter uppercase" href="store.html">STORE</a>
+<a class="text-white hover:text-[#ffb3ae] font-headline font-bold tracking-tighter uppercase transition-all duration-150 ease-in-out" href="#">ABOUT</a>
+</div>
+<button class="bg-[#ce1126] text-white px-8 py-2 font-headline font-bold tracking-tighter uppercase active:scale-95 transition-transform duration-100 hover:bg-[#ffb3ae] hover:text-white">
+            CART (0)
+        </button>
+</nav>
+
+<main>
+<!-- Hero Section: The Shop -->
+<section class="relative min-h-[70vh] flex flex-col justify-end overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 via-surface to-surface-container-low"></div>
+<div class="absolute inset-0 halftone-overlay opacity-20"></div>
+</div>
+<div class="relative z-10 px-10 pb-20 max-w-7xl">
+<div class="mb-4 inline-block bg-primary-container px-4 py-1 font-label text-sm uppercase tracking-widest text-on-primary-container">
+                    OFFICIAL MERCHANDISE
+                </div>
+<h1 class="text-[8vw] md:text-[12vw] leading-[0.85] font-headline font-black italic tracking-tighter uppercase text-on-surface mb-8">
+                    THE<br/>
+<span class="text-primary-container">LOCKER ROOM</span>
+</h1>
+<p class="text-xl md:text-2xl font-body text-secondary max-w-2xl leading-relaxed">
+                    Gear up like the Shohoku Five. Official jerseys, manga collections, and exclusive fan items.
+                </p>
+</div>
+<!-- Kinetic Speed Lines Decor -->
+<div class="absolute right-0 bottom-20 w-1/3 h-[2px] bg-primary-container z-20"></div>
+<div class="absolute right-0 bottom-28 w-1/4 h-[2px] bg-primary-container z-20 opacity-50"></div>
+</section>
+
+<!-- Filter Bar -->
+<section class="bg-surface-container-low py-6 px-10 border-y border-outline-variant/10 sticky top-24 z-40">
+<div class="max-w-screen-2xl mx-auto flex flex-wrap gap-4 items-center">
+<span class="font-label text-xs uppercase tracking-widest text-secondary">FILTER:</span>
+<button class="px-6 py-2 font-headline font-bold uppercase text-sm bg-primary-container text-white hover:bg-primary transition-colors duration-150">ALL</button>
+<button class="px-6 py-2 font-headline font-bold uppercase text-sm bg-surface text-on-surface hover:bg-primary-container hover:text-white transition-colors duration-150">JERSEYS</button>
+<button class="px-6 py-2 font-headline font-bold uppercase text-sm bg-surface text-on-surface hover:bg-primary-container hover:text-white transition-colors duration-150">MANGA</button>
+<button class="px-6 py-2 font-headline font-bold uppercase text-sm bg-surface text-on-surface hover:bg-primary-container hover:text-white transition-colors duration-150">POSTERS</button>
+<button class="px-6 py-2 font-headline font-bold uppercase text-sm bg-surface text-on-surface hover:bg-primary-container hover:text-white transition-colors duration-150">ACCESSORIES</button>
+</div>
+</section>
+
+<!-- Products Grid -->
+<section class="py-20 px-10 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product 1: Sakuragi Jersey -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-[12vw] font-headline font-black text-white/5 italic">10</span>
+</div>
+<div class="absolute top-4 left-4 bg-primary-container px-3 py-1 font-label text-xs uppercase text-white">Best Seller</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Jersey</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">SAKURAGI #10 HOME</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥8,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 2: Rukawa Jersey -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-[12vw] font-headline font-black text-white/5 italic">11</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Jersey</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">RUKAWA #11 HOME</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥8,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 3: Complete Manga Set -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer md:col-span-2 lg:col-span-1">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[8vw] text-white/5">auto_stories</span>
+</div>
+<div class="absolute top-4 left-4 bg-surface-container-highest px-3 py-1 font-label text-xs uppercase text-white border border-primary-container">Limited Edition</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Manga Collection</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">COMPLETE SET VOL. 1-31</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥35,000</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 4: Akagi Jersey -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-[12vw] font-headline font-black text-white/5 italic">04</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Jersey</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">AKAGI #04 CAPTAIN</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥8,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 5: Miyagi Jersey -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-[12vw] font-headline font-black text-white/5 italic">07</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Jersey</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">MIYAGI #07 SPEED</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥8,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 6: Mitsui Jersey -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="text-[12vw] font-headline font-black text-white/5 italic">14</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Jersey</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">MITSUI #14 SHOOTER</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥8,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 7: Poster Set -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[8vw] text-white/5">wall_art</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Poster</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">THE STARTING LINEUP POSTER SET</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥4,800</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 8: Basketball -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[8vw] text-white/5">sports_basketball</span>
+</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Equipment</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">SHOHOKU OFFICIAL BASKETBALL</h3>
+<div class="flex justify-between items-center">
+<span class="font-headline font-black text-3xl text-primary-container">¥6,500</span>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+
+<!-- Product 9: Key Chain Set -->
+<div class="group relative bg-surface-container-high overflow-hidden cursor-pointer">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-[8vw] text-white/5">key</span>
+</div>
+<div class="absolute top-4 right-4 bg-primary px-3 py-1 font-label text-xs uppercase text-on-primary">-20%</div>
+<div class="absolute inset-0 bg-primary-container/0 group-hover:bg-primary-container/10 transition-colors duration-150"></div>
+</div>
+<div class="p-8">
+<span class="font-label text-xs uppercase tracking-widest text-primary">Accessory</span>
+<h3 class="font-headline font-black text-2xl uppercase italic mt-2 mb-4">PLAYER NUMBER KEYCHAIN SET</h3>
+<div class="flex justify-between items-center">
+<div>
+<span class="font-headline font-black text-lg text-secondary line-through">¥2,500</span>
+<span class="font-headline font-black text-3xl text-primary-container ml-2">¥2,000</span>
+</div>
+<button class="bg-surface p-3 hover:bg-primary-container hover:text-white transition-colors duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Featured Collection -->
+<section class="py-20 px-10 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-primary-container p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 halftone-overlay w-64 h-64 opacity-20"></div>
+<span class="font-label text-xs uppercase tracking-widest text-white/80">New Release</span>
+<h2 class="font-headline font-black text-4xl md:text-5xl uppercase italic mt-4 mb-6 text-white">SLAM DUNK ART BOOK</h2>
+<p class="text-white/90 font-body mb-8 max-w-md">Exclusive collection of Takehiko Inoue's artwork and behind-the-scenes sketches from the entire series.</p>
+<div class="flex items-center gap-4">
+<span class="font-headline font-black text-3xl text-white">¥12,000</span>
+<button class="bg-white text-primary-container px-8 py-3 font-headline font-bold uppercase hover:bg-surface-container hover:text-white transition-colors duration-150">
+PRE-ORDER
+</button>
+</div>
+</div>
+<div class="bg-surface-container-high p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 halftone-overlay w-64 h-64 opacity-10"></div>
+<span class="font-label text-xs uppercase tracking-widest text-primary">Fan Favorite</span>
+<h2 class="font-headline font-black text-4xl md:text-5xl uppercase italic mt-4 mb-6 text-on-surface">REBOUND KING T-SHIRT</h2>
+<p class="text-on-surface-variant font-body mb-8 max-w-md">Premium cotton tee featuring iconic Sakuragi dunk moment. Limited print run of 500.</p>
+<div class="flex items-center gap-4">
+<span class="font-headline font-black text-3xl text-primary-container">¥5,800</span>
+<button class="bg-primary-container text-white px-8 py-3 font-headline font-bold uppercase hover:bg-surface-container hover:text-on-surface transition-colors duration-150">
+ADD TO CART
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Shipping Info -->
+<section class="py-20 px-10 bg-surface border-y border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-5xl text-primary-container">local_shipping</span>
+<div>
+<h3 class="font-headline font-black text-xl uppercase mb-2">WORLDWIDE SHIPPING</h3>
+<p class="text-on-surface-variant font-body text-sm">Free shipping on orders over ¥10,000. Delivery within 5-10 business days.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-5xl text-primary-container">verified</span>
+<div>
+<h3 class="font-headline font-black text-xl uppercase mb-2">OFFICIAL MERCHANDISE</h3>
+<p class="text-on-surface-variant font-body text-sm">100% authentic products licensed by I.T. Planning, Inc.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-5xl text-primary-container">assignment_return</span>
+<div>
+<h3 class="font-headline font-black text-xl uppercase mb-2">30-DAY RETURNS</h3>
+<p class="text-on-surface-variant font-body text-sm">Hassle-free returns and exchanges on all items.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 px-10 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#0e0e0e] border-t border-[#ce1126]/20">
+<div class="text-xl font-black text-[#ce1126] font-headline italic">SHOHOKU</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="index.html">HOME</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="index.html#characters">CHARACTERS</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="store.html">STORE</a>
+<a class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 hover:text-[#ce1126] transition-colors duration-150" href="#">ABOUT</a>
+</div>
+<div class="font-['Lexend'] text-xs tracking-widest uppercase text-white/60 text-center md:text-right">
+            © TAKEHIKO INOUE / I.T.PLANNING, INC. ALL RIGHTS RESERVED. <span class="block mt-1 text-[10px] opacity-50 uppercase tracking-wider">UNOFFICIAL FAN SITE</span>
+        </div>
+</footer>
+
+<script>
+    // Filter button functionality
+    document.querySelectorAll('section button').forEach(btn => {
+        if (btn.textContent.includes('ALL') || btn.textContent.includes('JERSEYS') || btn.textContent.includes('MANGA') || btn.textContent.includes('POSTERS') || btn.textContent.includes('ACCESSORIES')) {
+            btn.addEventListener('click', function() {
+                // Remove active class from all filter buttons
+                this.parentElement.querySelectorAll('button').forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-white');
+                    b.classList.add('bg-surface', 'text-on-surface');
+                });
+                // Add active class to clicked button
+                this.classList.remove('bg-surface', 'text-on-surface');
+                this.classList.add('bg-primary-container', 'text-white');
+            });
+        }
+    });
+
+    // Add to cart functionality
+    document.querySelectorAll('button').forEach(btn => {
+        if (btn.textContent.includes('shopping_bag') || btn.textContent.includes('ADD TO CART') || btn.textContent.includes('PRE-ORDER')) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const cartBtn = document.querySelector('nav button');
+                const currentCount = parseInt(cartBtn.textContent.match(/\d+/)[0]);
+                cartBtn.textContent = 'CART (' + (currentCount + 1) + ')';
+                this.classList.add('scale-95');
+                setTimeout(() => this.classList.remove('scale-95'), 100);
+            });
+        }
+    });
+
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const text = this.textContent.trim();
+            if (text) {
+                alert(text + ' - Coming Soon');
+            }
+        });
+    });
+</script>
+</body></html>

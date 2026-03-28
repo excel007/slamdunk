@@ -1,16 +1,58 @@
-node_modules
+# OS Files
 .DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor Files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+*.sublime-*
+
+# Environment Files
 .env
 .env.local
 .env.*.local
 *.key
 *.pem
+
+# Logs
 *.log
-.vscode
-.idea
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Outputs (if added later)
+node_modules
 dist
 build
 coverage
-*.swp
-*.swo
-*~
+.next
+out
+
+# Temporary/Test Files
+*.tmp
+*.temp
+test_*.html
+*_test.*
+*_bak.*
+
+# Images and Media (unless in assets folder)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.webp
+*.mp4
+*.mov
+!public/assets/*
+
+# Python (if running scripts locally)
+__pycache__
+*.py[cod]
+*$py.class
+*.pyc
+.Python
